@@ -23,6 +23,21 @@
 - `p1 = new Promise`后，可以`p1.then(箭头函数1表示成功,箭头函数2表示失败)`，根据 Promise 内的结果，即 Promise 的状态被设定为成功，执行函数 1，否则执行函数 2
 - `p1.then(成功函数).catch(失败函数)`也可以
 - Async：1，要有一个返回值为 Promise 的函数假设为 a，2，在调用 a 的函数 b 前面声明 `async function b(){}`
+- 更新: 一个标准的 Promise 类应该这样写
+
+```js
+promise = new Promise(asyns (resolve, reject) = > {
+    try {
+        // 你要执行的函数,前面加 await
+        resolve(data) // 返回执行成功后你要得到的数据
+    }catch(error) {
+        // 返回执行失败后你要得到的信息
+        reject(error)
+    }
+})
+```
+
+- 调用它同样应该`try{ await ... }catch(error){ ... }`
 
 ---
 

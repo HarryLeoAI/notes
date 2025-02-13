@@ -14,9 +14,15 @@
 - <a href="./Python_基础.md">Python\_基础</a>
 - <a href="./Python_面向对象.md">Python\_面向对象</a>
 - <a href="./Django博客开发.md">Django\_博客开发(Django 基础)</a>
-- <a href="./DjangoRestFramework.md">DjangoRestFramework学习</a>
+- <a href="./DjangoRestFramework.md">DjangoRestFramework 学习</a>
 
 # others
 
 - <a href="./Git_基础.md">Git\_基础</a>
 - <a href="./SQL.md">SQL</a>
+
+# 实战项目
+
+- myoa: 基于 vue + elmentplus + django + drf 打造的企业 OA 管理系统
+  - <a href="https://github.com/HarryLeoAI/myoa_face">前端</a>
+  - <a href="https://github.com/HarryLeoAI/myoa_back">后端</a>
