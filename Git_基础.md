@@ -26,22 +26,25 @@
 
 # commit 的注释修改起来很麻烦
 
+> git commit --amend -m "在 push 之前可以修改最新一次 commit -m 的备注"
+
 - 已经推送的远程仓库再想改就来不及了，push 之前小心再小心。
 - commit -m "注释"，这个注释有时候容易忘记写，或者写错，可以用：
+
   > git commit --amend
-  >
+
   > 用打开最近一次的提交文档，【i】进入编辑，第一行就是注释，再【esc】【:wq】保存退出
-  >
+
   > git log #查看提交日志
-  >
+
   > git rebase -i HEAD~数字 #展示最近 2 次注释
-  >
+
   > git commit --amend #重复上面的操作
-  >
+
   > git rebase --continue #修改成功
-  >
+
   > 如果已经 push 了，就只有 pull 下来，改完注释后，再
-  >
+
   > git push --force #强制推送，所以推之前小心点
 
 # .gitignore
